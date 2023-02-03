@@ -1,14 +1,39 @@
 body {
-  background-color: rgb(241, 237, 237);
+  background-color: #fff;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.title {
+  padding: 0.5rem;
+  color: rgb(58, 57, 57);
+  text-align: center;
+  margin: 1.5rem;
 }
 
 ul li {
   list-style-type: none;
+  width: 450px;
+  height: 300px;
+  border: 1px solid gray;
+  margin: auto;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .app > h2 {
@@ -18,12 +43,19 @@ ul li {
 .app > ul {
   display: grid;
   grid-template-columns: auto auto;
-  margin: 1.5rem;
-  gap: 1rem;
+  row-gap: 2rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+  .app {
+    width: 600px;
+  }
   .app > ul {
     grid-template-columns: auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding: 0 20px;
   }
 }
