@@ -7,6 +7,7 @@ import {
 
 import AccordionCard from "./components/AccordionCard";
 import ComingSoon from "./components/ComingSoon";
+import Home from "./components/Home";
 import HuddlePage from "./components/HuddlePage";
 import Main from "./components/Main";
 import NotFound from "./components/NotFound";
@@ -18,7 +19,7 @@ import StatsPreviewCard from "./components/StatsPreviewCard";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Main />}>
+    <Route path="/" element={<Home />}>
       {/*when path is "/" you can use just the boolean prop 'index' */}
       <Route index element={<Main />} />
       <Route path="accordion-card" element={<AccordionCard />} />
