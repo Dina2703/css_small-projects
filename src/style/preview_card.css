@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+}
+
+#preview-card {
+  background-color: var(--light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  width: 100vw;
+  height: calc(100vh - 58px);
+  padding-top: 100px;
+}
+
+#preview-card .container {
+  width: 720px;
+  height: 460px;
+  margin: auto;
+}
+
+#preview-card img {
+  width: 100%;
+}
+
+.item .img-wrapper {
+  display: inline-block;
+  width: 50px;
+}
+
+#preview-card h3 {
+  color: white;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+#preview-card p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: var(--transparent-white);
+  line-height: 22px;
+}
+
+#preview-card button {
+  background-color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
+  border-radius: 20px;
+  padding: 12px 26px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.15 ease-in-out;
+  margin-bottom: 13px;
+}
+
+#preview-card button:hover {
+  color: var(--transparent-white);
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.item {
+  width: 33.3%;
+  height: 100%;
+  padding: 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.left button {
+  color: var(--bright-orange);
+}
+
+.middle {
+  background-color: var(--dark-cyan);
+}
+
+.middle button {
+  color: var(--dark-cyan);
+}
+
+.right {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.right button {
+  color: var(--very-dark-cyan);
+}
