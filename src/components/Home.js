@@ -5,7 +5,7 @@ function Home() {
     <div>
       <header>
         <nav>
-          <NavLink to="/">Back</NavLink>
+          <NavLink to="/">Home page</NavLink>
         </nav>
       </header>
       <main>
