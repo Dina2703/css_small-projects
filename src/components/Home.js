@@ -1,11 +1,13 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Breadcrumbs from "./Breadcrumbs";
 
 function Home() {
   return (
     <div>
       <header>
         <nav>
-          <NavLink to="/">Back to Home page</NavLink>
+          <NavLink to="/"> Home page {"/"}</NavLink>
+          <Breadcrumbs />
         </nav>
       </header>
       <main>
