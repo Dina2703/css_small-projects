@@ -114,6 +114,7 @@
   font-size: 15px;
   cursor: pointer;
   transition: transform 0.15s ease-in-out;
+  margin-bottom: 13px;
 }
 
 #price-grid button:hover {
@@ -125,4 +126,30 @@
   line-height: 1rem;
   list-style-type: none;
   color: rgb(246, 244, 244);
+}
+
+/* Mobile style */
+
+@media screen and (max-width: 500px) {
+  #price-grid .container {
+    width: 300px;
+    height: auto;
+  }
+
+  #price-grid .main-desc {
+    height: 100%;
+  }
+
+  #price-grid .grid-container {
+    grid-template-columns: auto;
+  }
+
+  #price-grid .why-us {
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  #price-grid .subscription {
+    border-radius: 0;
+  }
 }
