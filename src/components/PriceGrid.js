@@ -17,8 +17,10 @@ function PriceGrid() {
         <div className="grid-container">
           <div className="subscription">
             <h4>Monthly Subscription</h4>
-            <p>$29 per month</p>
-            <p>full access for less than $1 a day</p>
+            <p>
+              <span>$29</span> <span>per month</span>
+            </p>
+            <p className="access">Full access for less than $1 a day</p>
             <button>Sign Up</button>
           </div>
           <div className="why-us">
