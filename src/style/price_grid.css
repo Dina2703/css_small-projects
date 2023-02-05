@@ -25,8 +25,9 @@
 
 #price-grid .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   height: 55%;
+  color: whitesmoke;
 }
 
 #price-grid .main-desc {
@@ -67,4 +68,16 @@
   background-color: var(--grayish-blue);
   border-bottom-right-radius: 7px;
   padding: 2rem;
+}
+
+#price-grid .why-us h4 {
+  font-size: 15px;
+  padding: 5px 0;
+  margin-bottom: 0.5rem;
+}
+
+#price-grid .why-us ul {
+  font-size: 12px;
+  line-height: 1rem;
+  list-style-type: none;
 }

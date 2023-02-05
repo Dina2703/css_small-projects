@@ -23,11 +23,15 @@ function PriceGrid() {
           </div>
           <div className="why-us">
             <h4>Why Us </h4>
-            <p>
-              Tutorails by industry experts Peer & expert code review Coding
-              exercises Access to our GitHUb repos Community decks New videos
-              every week
-            </p>
+            <ul>
+              <li>Tutorails by industry experts</li>
+              <li>Peer & expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHUb repos</li>
+              <li>Community form</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
           </div>
         </div>
       </div>
