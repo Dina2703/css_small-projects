@@ -3,12 +3,12 @@
 :root {
   --primary-cyan: hsl(179, 62%, 43%);
   --primary-yellow: hsl(71, 73%, 54%);
-  --light-gray: hsl(204, 43%, 93%);
+  --light-gray: hsl(203, 11%, 77%);
   --grayish-blue: hsl(179, 63%, 51%);
 }
 
 #price-grid {
-  background-color: var(--light-gray);
+  background-color: #fff;
   font-family: "Karla", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -16,8 +16,8 @@
 }
 
 #price-grid .container {
-  width: 720px;
-  height: 460px;
+  width: 690px;
+  height: 450px;
   margin: auto;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
   border-radius: 7px;
@@ -34,6 +34,27 @@
   padding: 2rem;
   height: 45%;
   border-radius: 7px 7px 0 0;
+}
+
+#price-grid .main-desc h3 {
+  color: var(--primary-cyan);
+  padding: 5px 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+#price-grid .main-desc > *:nth-child(2) {
+  color: var(--primary-yellow);
+  padding: 4px 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#price-grid .main-desc > *:last-child {
+  color: var(--light-gray);
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 #price-grid .subscription {
