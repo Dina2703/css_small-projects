@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(179, 63%, 51%);
+}
+
+#price-grid {
+  background-color: var(--light-gray);
+  font-family: "Karla", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+#price-grid .container {
+  width: 720px;
+  height: 460px;
+  margin: auto;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+}
+
+#price-grid .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 55%;
+}
+
+#price-grid .main-desc {
+  background-color: white;
+  padding: 2rem;
+  height: 45%;
+  border-radius: 7px 7px 0 0;
+}
+
+#price-grid .subscription {
+  background-color: var(--primary-cyan);
+  border-bottom-left-radius: 7px;
+  padding: 2rem;
+}
+
+#price-grid .why-us {
+  background-color: var(--grayish-blue);
+  border-bottom-right-radius: 7px;
+  padding: 2rem;
+}

@@ -30,3 +30,7 @@ header nav {
 header nav a.active {
   display: none;
 }
+
+.breadcrumb {
+  border-bottom: 1px solid gray;
+}

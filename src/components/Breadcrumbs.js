@@ -23,7 +23,7 @@ function Breadcrumbs() {
     });
   // console.log(crumbs);
 
-  return <div>{crumbs}</div>;
+  return <div className="breadcrumb">{crumbs}</div>;
 }
 
 export default Breadcrumbs;
