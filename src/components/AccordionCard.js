@@ -12,10 +12,10 @@ function AccordionCard() {
     <div id="accordion-proj">
       <div className="container">
         <div className="hero-left">
-          <div className="hero-img-container"></div>
-          {/* <div className="box-img">
+          <div className="hero-img-container "></div>
+          <div className="box-img">
             <img src={boxImgDesktop} alt="" />
-          </div> */}
+          </div>
         </div>
         <div className="accordion-section">
           <div>FAG</div>
