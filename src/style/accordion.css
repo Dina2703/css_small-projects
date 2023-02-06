@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-text-blue: hsl(238, 29%, 16%);
+  --primary-text-red: hsl(14, 88%, 65%);
+  --secondary-dark-blue: hsl(237, 12%, 33%);
+  --secondary-blue: hsl(240, 6%, 50%);
+  --bg-blue: hsl(240, 73%, 65%);
+  --bg-violet: hsl(273, 75%, 66%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+#accordion-proj {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
+  height: calc(100vh - 68.5px);
+  width: 100%;
+  padding-top: 150px;
+}
+
+#accordion-proj .container {
+  width: 600px;
+  height: 330px;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 0.7rem;
+  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#accordion-proj .hero-img-container {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#accordion-proj .hero-img-container .box-img {
+  width: 120px;
+  height: auto;
+  z-index: 100;
+  position: absolute;
+  left: -78px;
+}
+
+#accordion-proj .accordion-section {
+  flex: 1;
+  background-color: antiquewhite;
+}

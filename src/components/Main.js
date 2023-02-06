@@ -64,7 +64,7 @@ function Main() {
   return (
     <section id="main">
       <div className="container">
-        {/* <h2 className="title">Small projects to practice HTML, CSS, JS</h2> */}
+        <h2 className="title">Small projects to practice HTML, CSS, JS</h2>
         <div className="projects-wrapper">
           <ul>
             {images.map((each) => (
