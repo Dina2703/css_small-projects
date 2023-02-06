@@ -10,17 +10,16 @@ import BgPatternDesktop from "../assets/accordion-card/images/bg-pattern-desktop
 function AccordionCard() {
   return (
     <div id="accordion-proj">
-      <div className="wrapper">
-        <div className="container">
-          <div className="hero-img-container">
-            <div className="box-img">
-              <img src={boxImgDesktop} alt="" />
-            </div>
-          </div>
-          <div className="accordion-section">
-            <div>FAG</div>
-            <div>accordion</div>
-          </div>
+      <div className="container">
+        <div className="hero-left">
+          <div className="hero-img-container"></div>
+          {/* <div className="box-img">
+            <img src={boxImgDesktop} alt="" />
+          </div> */}
+        </div>
+        <div className="accordion-section">
+          <div>FAG</div>
+          <div>accordion</div>
         </div>
       </div>
     </div>
