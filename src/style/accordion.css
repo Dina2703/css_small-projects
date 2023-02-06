@@ -11,6 +11,7 @@
 }
 
 #accordion-proj {
+  box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -21,8 +22,8 @@
 }
 
 #accordion-proj .container {
-  width: 600px;
-  height: 330px;
+  width: 700px;
+  height: 350px;
   background-color: white;
   margin: auto;
   display: flex;
@@ -32,7 +33,7 @@
 }
 
 #accordion-proj .hero-left {
-  flex: 1;
+  width: 50%;
   height: 100%;
   position: relative;
 }
@@ -40,10 +41,10 @@
 #accordion-proj .hero-img-container {
   width: 100%;
   height: 100%;
-  background-size: 500px 580px;
+  background-size: 600px 580px;
   background-image: url(../assets/accordion-card/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: bottom -78px right 50px;
+  background-position: bottom -78px right 55px;
   caret-color: transparent;
   position: relative;
 }
@@ -51,26 +52,84 @@
 #accordion-proj .hero-img-container::after {
   width: 100%;
   height: 100%;
-  background-size: 300px auto;
+  background-size: 350px auto;
   background-image: url(../assets/accordion-card/images/illustration-woman-online-desktop.svg);
   background-repeat: no-repeat;
-  background-position: top 35px right 50px;
+  background-position: top 45px right 55px;
   position: absolute;
   content: "";
-
-  caret-color: transparent;
 }
 
 #accordion-proj .box-img {
-  width: 120px;
+  width: 130px;
   z-index: 100;
   position: absolute;
-  left: -78px;
-  bottom: 25%;
+  left: -77px;
+  bottom: 21%;
 }
 
 #accordion-proj .accordion-section {
   flex: 1;
   height: 100%;
   caret-color: transparent;
+}
+
+/* accordion side */
+.accordion-section {
+  width: 50%;
+  padding: 35px 10px;
+}
+
+.accordion-section img {
+  width: 10px;
+}
+
+.accordion-section h3 {
+  font-weight: 700;
+  font-size: large;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.accordion-section .accordion_answer {
+  display: none;
+  color: var(--secondary-blue);
+  font-size: 11px;
+  padding: 6px 0;
+}
+
+.accordion {
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accordion_item {
+  width: 280px;
+}
+
+.accordion_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  cursor: pointer;
+  color: var(--primary-text-blue);
+  padding-right: 7px;
+}
+
+.accordion_question p {
+  color: var(--primary-text-blue);
+  font-size: 13px;
+}
+
+.accordion_question p:hover {
+  color: var(--primary-text-red);
+}
+
+.accordion_item .devider {
+  border-bottom: 1px solid var(--divider);
+  margin: 6px 0;
+  width: 100%;
 }

@@ -18,8 +18,86 @@ function AccordionCard() {
           </div>
         </div>
         <div className="accordion-section">
-          <div>FAG</div>
-          <div>accordion</div>
+          <div>
+            <h3>FAQ</h3>
+          </div>
+          <div className="accordion">
+            <div className="accordion_item">
+              <div className="accordion_question">
+                <p> How many team members can I invite?</p>
+                <span className="arrowIcon">
+                  <img src={ArrowDownIcon} alt="" />
+                </span>
+              </div>
+              <div className="accordion_answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut reiciendis
+                </p>
+              </div>
+              <div className="devider"></div>
+            </div>
+            <div className="accordion_item">
+              <div className="accordion_question">
+                <p> How many team members can I invite?</p>
+                <span className="arrowIcon">
+                  <img src={ArrowDownIcon} alt="" />
+                </span>
+              </div>
+              <div className="accordion_answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut reiciendis
+                </p>
+              </div>
+              <div className="devider"></div>
+            </div>
+            <div className="accordion_item">
+              <div className="accordion_question">
+                <p> How many team members can I invite?</p>
+                <span className="arrowIcon">
+                  <img src={ArrowDownIcon} alt="" />
+                </span>
+              </div>
+              <div className="accordion_answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut reiciendis
+                </p>
+              </div>
+              <div className="devider"></div>
+            </div>
+            <div className="accordion_item">
+              <div className="accordion_question">
+                <p> How many team members can I invite?</p>
+                <span className="arrowIcon">
+                  <img src={ArrowDownIcon} alt="" />
+                </span>
+              </div>
+              <div className="accordion_answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut reiciendis
+                </p>
+              </div>
+              <div className="devider"></div>
+            </div>
+            <div className="accordion_item">
+              <div className="accordion_question">
+                <p> How many team members can I invite?</p>
+                <span className="arrowIcon">
+                  <img src={ArrowDownIcon} alt="" />
+                </span>
+              </div>
+              <div className="accordion_answer">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae aut reiciendis
+                </p>
+              </div>
+              <div className="devider"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
