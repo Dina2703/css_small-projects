@@ -18,7 +18,9 @@
   background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
   height: calc(100vh - 68.5px);
   width: 100%;
-  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #accordion-proj .container {
@@ -29,7 +31,7 @@
   display: flex;
   align-items: center;
   border-radius: 1.3rem;
-  box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 30px 20px rgba(0, 0, 0, 0.15);
 }
 
 #accordion-proj .hero-left {
@@ -68,16 +70,12 @@
   bottom: 24%;
 }
 
-#accordion-proj .accordion-section {
-  flex: 1;
-  height: 100%;
-  caret-color: transparent;
-}
-
 /* accordion side */
 .accordion-section {
   width: 50%;
   padding: 35px 10px;
+  height: 100%;
+  caret-color: transparent;
 }
 
 .accordion-section img {
@@ -141,22 +139,60 @@
   #accordion-proj .container {
     flex-direction: column;
     width: 350px;
-    height: auto;
+    height: 540px;
+    margin-top: 130px;
   }
+
   .accordion-section {
     width: 100%;
-    padding: 35px 30px;
+    height: 400px;
+    padding: 5px 30px;
+    margin: 10px 0 20px;
   }
 
   .accordion-section h3 {
     font-size: x-large;
     padding: 5px 0;
-    margin: 20px;
+    padding-bottom: 14px;
     text-align: center;
   }
 
   .accordion_item {
     width: 100%;
     padding: 5px 0;
+  }
+
+  #accordion-proj .hero-left {
+    width: 100%;
+    height: 20%;
+    position: relative;
+  }
+
+  #accordion-proj .hero-img-container {
+    width: 100%;
+    height: 100%;
+    background-size: 240px 100px;
+    background-image: url(../assets/accordion-card/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 55px;
+    caret-color: transparent;
+    position: relative;
+  }
+
+  #accordion-proj .hero-img-container::after {
+    width: 68%;
+    height: 200px;
+    background-size: contain;
+    background-image: url(../assets/accordion-card/images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top 10px right 0;
+    bottom: 19px;
+    right: 55px;
+    position: absolute;
+    content: "";
+  }
+
+  #accordion-proj .box-img {
+    display: none;
   }
 }
