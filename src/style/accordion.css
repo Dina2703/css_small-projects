@@ -28,7 +28,7 @@
   margin: auto;
   display: flex;
   align-items: center;
-  border-radius: 0.7rem;
+  border-radius: 1.3rem;
   box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -94,8 +94,10 @@
 .accordion-section .accordion_answer {
   display: block;
   color: var(--secondary-blue);
-  font-size: 11px;
+  font-size: 12px;
   padding: 6px 0;
+  margin-right: 30px;
+  line-height: 1rem;
 }
 
 .accordion {
@@ -122,7 +124,7 @@
 
 .accordion_question p {
   color: var(--primary-text-blue);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .accordion_question p:hover {
@@ -131,6 +133,30 @@
 
 .accordion_item .devider {
   border-bottom: 1px solid var(--divider);
-  margin: 6px 0;
+  margin: 10px 0;
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  #accordion-proj .container {
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+  }
+  .accordion-section {
+    width: 100%;
+    padding: 35px 30px;
+  }
+
+  .accordion-section h3 {
+    font-size: x-large;
+    padding: 5px 0;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .accordion_item {
+    width: 100%;
+    padding: 5px 0;
+  }
 }
