@@ -71,7 +71,10 @@ export const AccordionItem = ({ each }) => {
     <div className="accordion_item" key={each.id} onClick={toggleAccordion}>
       <div className="accordion_question">
         <p style={{ fontWeight: isActive ? "bold" : "" }}>{each.question}</p>
-        <span className="arrowIcon">
+        <span
+          className="arrowIcon"
+          style={{ transform: isActive ? "rotate(180deg)" : "" }}
+        >
           <img src={ArrowDownIcon} alt="" />
         </span>
       </div>
