@@ -23,7 +23,7 @@
 
 #accordion-proj .container {
   width: 700px;
-  height: 350px;
+  height: 400px;
   background-color: white;
   margin: auto;
   display: flex;
@@ -41,7 +41,7 @@
 #accordion-proj .hero-img-container {
   width: 100%;
   height: 100%;
-  background-size: 600px 580px;
+  background-size: 600px 680px;
   background-image: url(../assets/accordion-card/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
   background-position: bottom -78px right 55px;
@@ -55,17 +55,17 @@
   background-size: 350px auto;
   background-image: url(../assets/accordion-card/images/illustration-woman-online-desktop.svg);
   background-repeat: no-repeat;
-  background-position: top 45px right 55px;
+  background-position: top 65px right 55px;
   position: absolute;
   content: "";
 }
 
 #accordion-proj .box-img {
-  width: 130px;
+  width: 140px;
   z-index: 100;
   position: absolute;
-  left: -77px;
-  bottom: 21%;
+  left: -92px;
+  bottom: 24%;
 }
 
 #accordion-proj .accordion-section {
@@ -92,17 +92,18 @@
 }
 
 .accordion-section .accordion_answer {
-  display: none;
+  display: block;
   color: var(--secondary-blue);
   font-size: 11px;
   padding: 6px 0;
 }
 
 .accordion {
-  height: 77%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .accordion_item {
