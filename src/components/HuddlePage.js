@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/HuddleLandingPage.css";
+import "../style/huddle_landing_page.css";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
