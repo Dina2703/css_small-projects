@@ -18,7 +18,7 @@ function ComingSoon() {
         </div>
         <p>Subscribe and get notified</p>
         <div className="notify_wrapper">
-          <input type="text" placeholder="Your email address" />{" "}
+          <input type="text" placeholder="Your email address..." />{" "}
           <button>Notify Me</button>
         </div>
         <div className="img_wrapper">
