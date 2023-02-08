@@ -12,8 +12,7 @@
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
   width: 100vw;
-  height: calc(100vh - 68.5px);
-  background-color: rgb(244, 244, 244);
+  height: 100%;
 }
 
 #coming-soon .container {
@@ -56,12 +55,12 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 10px;
-  width: 500px;
+  width: 100%;
   padding: 0 5px;
 }
 
 #coming-soon .notify_wrapper input {
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: 20px;
   border: 1px solid var(--gray);
   outline: none;
@@ -73,24 +72,31 @@
 #coming-soon .notify_wrapper button {
   border-radius: 20px;
   border: none;
+  padding: 10px 15px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   background-color: var(--primary-blue);
   color: white;
   font-size: 14px;
   cursor: pointer;
+  transition: opacity 0.1 ease-in-out;
+}
+
+#coming-soon .notify_wrapper button:hover {
+  opacity: 0.9;
 }
 
 #coming-soon .img_wrapper {
-  margin: 26px;
+  margin: 40px 0 20px;
 }
 
 #coming-soon .img_wrapper img {
-  width: 500px;
+  width: 100%;
 }
 
 #coming-soon footer {
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  height: 100px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -112,11 +118,18 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  color: var(--primary-blue);
+  transition: all 0.1 ease-in-out;
+}
+
+#coming-soon footer ul li:hover {
+  background-color: var(--primary-blue);
+  border: none;
+  color: white;
 }
 
 #coming-soon footer ul li > * {
   width: 100%;
-  color: var(--primary-blue);
 }
 
 #coming-soon footer p {
@@ -125,4 +138,20 @@
   text-align: center;
   padding: 5px 0 15px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  #coming-soon .container {
+    width: 375px;
+  }
+
+  #coming-soon .ping-title {
+    color: var(--gray);
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  #coming-soon .notify_wrapper {
+    grid-template-columns: 1fr;
+  }
 }
