@@ -21,6 +21,7 @@ function HuddlePage() {
           <div className="hero-image">
             <img src={mockups} alt="mockups" />
           </div>
+
           <div className="hero-context-wrapper">
             <div className="hero-context">
               <div className="title heading1">
@@ -35,7 +36,9 @@ function HuddlePage() {
                   users as you engage in genuine discussion.
                 </p>
               </div>
-              <button>Register</button>
+              <div className="button-wrapper">
+                <button>Register</button>
+              </div>
             </div>
           </div>
         </main>
@@ -43,13 +46,13 @@ function HuddlePage() {
           <div>
             <ul>
               <li>
-                <FaFacebookF size={23} />
+                <FaFacebookF />
               </li>
               <li>
-                <FaTwitter size={23} />
+                <FaTwitter />
               </li>
               <li>
-                <FaInstagram size={23} />
+                <FaInstagram />
               </li>
             </ul>
           </div>
