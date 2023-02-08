@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/HuddleLandingPage.css";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -15,21 +16,26 @@ function HuddlePage() {
             <img src={logo} alt="huddle logo" />
           </div>
         </header>
+
         <main>
           <div className="hero-image">
             <img src={mockups} alt="mockups" />
           </div>
           <div className="hero-context-wrapper">
-            <div className="title">
-              <h1>Build The Community</h1>
-              <h1>Your Fans Will Love</h1>
-            </div>
-            <div>
-              <p>
-                Huddle re-imagines the way we build communities. You have a
-                voice, but so does your audience. Create connections with your
-                users as you engage in genuine discussion.
-              </p>
+            <div className="hero-context">
+              <div className="title heading1">
+                <h1>Build The Community</h1>
+                <h1>Your Fans Will Love</h1>
+              </div>
+
+              <div>
+                <p>
+                  Huddle re-imagines the way we build communities. You have a
+                  voice, but so does your audience. Create connections with your
+                  users as you engage in genuine discussion.
+                </p>
+              </div>
+              <button>Register</button>
             </div>
           </div>
         </main>
@@ -37,19 +43,18 @@ function HuddlePage() {
           <div>
             <ul>
               <li>
-                <FaFacebookF />
+                <FaFacebookF size={23} />
               </li>
               <li>
-                <FaTwitter />
+                <FaTwitter size={23} />
               </li>
               <li>
-                <FaInstagram />
+                <FaInstagram size={23} />
               </li>
             </ul>
           </div>
         </footer>
       </div>
-      <h3>Huddle landing page with a single introductory section</h3>
     </div>
   );
 }

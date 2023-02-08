@@ -8,8 +8,120 @@
 
 .heading1 {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: whitesmoke;
+}
+
+#huddle {
+  width: 100vw;
+  height: calc(100vh - 68.5px);
+  background-color: var(--primary-violet);
+  position: relative;
+}
+
+#huddle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/huddle-landing/images/bg-desktop.svg);
+  z-index: 10;
+}
+
+.huddle-container {
+  position: relative;
+  z-index: 100;
+  width: 1200px;
+  margin: auto;
+}
+
+.huddle-container header {
+  padding: 2rem 0;
+}
+
+.huddle-container header .logo-wrapper {
+  width: 200px;
+}
+
+#huddle main {
+  height: 470px;
+  display: flex;
+  padding-top: 30px;
+}
+
+#huddle main .hero-image {
+  flex: 1.2;
+  height: 100%;
+}
+
+#huddle main .hero-context-wrapper {
+  flex: 1;
+  height: 100%;
+}
+
+#huddle .hero-context {
+  padding-left: 50px;
+  color: white;
+}
+
+#huddle .hero-context .title {
+  color: white;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#huddle .hero-context p {
+  margin: 1rem 0;
+}
+
+#huddle .hero-context button {
+  width: 200px;
+  padding: 1rem;
+  margin: 10px 0;
+  border: none;
+  border-radius: 30px;
+  color: var(--primary-violet);
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#huddle .hero-context button:hover,
+#huddle .hero-context button:active {
+  color: white;
+  background-color: var(--primary-magenta);
+}
+
+#huddle footer {
+  width: 100%;
+}
+
+#huddle footer ul {
+  list-style-type: none;
+  width: 200px;
+  color: white;
+  margin-left: auto;
+}
+
+#huddle footer ul li {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 14px;
+}
+
+#huddle footer ul li > * {
+  display: flex;
 }
