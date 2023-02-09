@@ -3,6 +3,7 @@ import "../style/social_section.css";
 import avatar1 from "../assets/social-section/images/image-colton.jpg";
 import avatar2 from "../assets/social-section/images/image-irene.jpg";
 import avatar3 from "../assets/social-section/images/image-anne.jpg";
+import starIcon from "../assets/social-section/images/icon-star.svg";
 
 function SocialProofSection() {
   return (
@@ -20,27 +21,27 @@ function SocialProofSection() {
         </div>
         <div className="rating">
           <div className="rate_item">
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
+            <div className="stars">
+              <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+            </div>
             <span>Rated 5 Stars in Reviews</span>
           </div>
           <div className="rate_item">
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
+            <div className="stars">
+              <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+            </div>
             <span>Rated 5 Stars in Guru</span>
           </div>
           <div className="rate_item">
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
-            <span>*</span>
+            <div className="stars">
+              <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+              <img src={starIcon} alt="" /> <img src={starIcon} alt="" />
+            </div>
             <span>Rated 5 Stars in BestTech</span>
           </div>
         </div>

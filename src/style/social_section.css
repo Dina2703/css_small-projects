@@ -10,7 +10,8 @@
 
 #social-proof-section {
   font-family: "League Spartan", sans-serif;
-  width: 100vw;
+  margin: auto;
+  width: 1440px;
   height: 100vh;
   background-color: var(--white);
   background: url(../assets/social-section/images/bg-pattern-top-desktop.svg)
@@ -24,10 +25,9 @@
 }
 
 #social-proof-section .grid_container {
-  width: 1000px;
-  padding: 3rem 4rem;
+  width: 900px;
+  padding: 3rem;
   height: 600px;
-  background: lightgray;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
@@ -55,12 +55,44 @@
 
 #social-proof-section .grid_container .promo p {
   font-size: 15px;
-  font-weight: 400;
   color: var(--grayish-magenta);
 }
 
 #social-proof-section .grid_container .rating {
-  background-color: rgb(255, 217, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 75%;
+}
+
+#social-proof-section .grid_container .rate_item {
+  width: 320px;
+  background: var(--light-magenta);
+  padding: 8px 19px;
+  border-radius: 7px;
+}
+
+#social-proof-section .grid_container .rate_item:nth-child(2) {
+  margin-left: 35px;
+}
+#social-proof-section .grid_container .rate_item:nth-child(3) {
+  margin-left: 70px;
+}
+
+#social-proof-section .grid_container .rate_item .stars {
+  display: inline-flex;
+  gap: 3px;
+}
+
+#social-proof-section .grid_container .rate_item .stars img {
+  width: 13px;
+}
+
+#social-proof-section .grid_container .rate_item span {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
 #social-proof-section .grid_container .testimonials {
