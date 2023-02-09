@@ -12,7 +12,7 @@
   font-family: "League Spartan", sans-serif;
   margin: auto;
   width: 1440px;
-  height: 100vh;
+  height: calc(100vh - 68.5px);
   background-color: var(--white);
   background: url(../assets/social-section/images/bg-pattern-top-desktop.svg)
       left top no-repeat,
@@ -20,14 +20,10 @@
       bottom no-repeat;
 }
 
-#social-proof-section .testimonial_card img {
-  width: 40px;
-}
-
 #social-proof-section .grid_container {
-  width: 900px;
+  width: 1100px;
   padding: 3rem;
-  height: 600px;
+  height: 650px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
@@ -36,7 +32,6 @@
 
 #social-proof-section .flex {
   display: flex;
-  background-color: aliceblue;
   justify-content: space-between;
   gap: 10px;
 }
@@ -46,15 +41,16 @@
 }
 
 #social-proof-section .grid_container .promo h3 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--primary-dark-magenta);
   margin-bottom: 1.3rem;
-  line-height: 1.3rem;
+  line-height: 1.7rem;
 }
 
 #social-proof-section .grid_container .promo p {
   font-size: 15px;
+  line-height: 1.1rem;
   color: var(--grayish-magenta);
 }
 
@@ -67,17 +63,18 @@
 }
 
 #social-proof-section .grid_container .rate_item {
-  width: 320px;
+  width: 350px;
   background: var(--light-magenta);
-  padding: 8px 19px;
+  padding: 12px 19px;
   border-radius: 7px;
 }
 
 #social-proof-section .grid_container .rate_item:nth-child(2) {
-  margin-left: 35px;
-}
-#social-proof-section .grid_container .rate_item:nth-child(3) {
   margin-left: 70px;
+}
+
+#social-proof-section .grid_container .rate_item:nth-child(3) {
+  margin-left: 140px;
 }
 
 #social-proof-section .grid_container .rate_item .stars {
@@ -97,5 +94,41 @@
 
 #social-proof-section .grid_container .testimonials {
   grid-column: span 2;
-  padding: 2rem 1.5rem;
+}
+
+#social-proof-section .testimonial_card {
+  background-color: var(--primary-dark-magenta);
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 220px;
+  justify-content: space-between;
+  width: 30%;
+  color: white;
+  font-size: 15px;
+  line-height: 1rem;
+}
+
+#social-proof-section .testimonial_card:nth-child(2) {
+  margin-top: 20px;
+}
+
+#social-proof-section .testimonial_card:nth-child(3) {
+  margin-top: 40px;
+}
+
+#social-proof-section .testimonial_card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#social-proof-section .testimonial_card .user {
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+
+#social-proof-section .user_info span:last-child {
+  color: var(--primary-pink);
 }

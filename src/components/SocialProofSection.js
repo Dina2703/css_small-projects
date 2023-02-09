@@ -47,15 +47,15 @@ function SocialProofSection() {
         </div>
         <div className="testimonials flex">
           {data.map((custom) => (
-            <div key={custom.id} className="testimonial_card">
-              <div>
-                <img src={custom.avatar} alt="" />
-                <div>
-                  <span>{custom.name}</span>
+            <div key={custom.id} className="testimonial_card flex">
+              <div className="flex user">
+                <img src={custom.avatar} alt={custom.name} />
+                <div className="user_info">
+                  <span>{custom.name}</span> <br />
                   <span>Verified Buyer</span>
                 </div>
               </div>
-              <p>{custom.review}</p>
+              <p>{`" ${custom.review} "`}</p>
             </div>
           ))}
         </div>
