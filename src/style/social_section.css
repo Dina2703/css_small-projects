@@ -22,3 +22,48 @@
 #social-proof-section .testimonial_card img {
   width: 40px;
 }
+
+#social-proof-section .grid_container {
+  width: 1000px;
+  padding: 3rem 4rem;
+  height: 600px;
+  background: lightgray;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+}
+
+#social-proof-section .flex {
+  display: flex;
+  background-color: aliceblue;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#social-proof-section .grid_container .promo {
+  width: 80%;
+}
+
+#social-proof-section .grid_container .promo h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-dark-magenta);
+  margin-bottom: 1.3rem;
+  line-height: 1.3rem;
+}
+
+#social-proof-section .grid_container .promo p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grayish-magenta);
+}
+
+#social-proof-section .grid_container .rating {
+  background-color: rgb(255, 217, 0);
+}
+
+#social-proof-section .grid_container .testimonials {
+  grid-column: span 2;
+  padding: 2rem 1.5rem;
+}

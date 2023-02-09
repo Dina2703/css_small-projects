@@ -7,10 +7,10 @@ import avatar3 from "../assets/social-section/images/image-anne.jpg";
 function SocialProofSection() {
   return (
     <div id="social-proof-section">
-      <div className="container grid">
+      <div className="grid_container">
         <div className="promo">
           <h3>
-            10, 000+ of our <br /> users love our <br /> products.
+            10,000+ of our <br /> users love our <br /> products.
           </h3>
           <p>
             We only provide great products combined with excellent customer
@@ -44,7 +44,7 @@ function SocialProofSection() {
             <span>Rated 5 Stars in BestTech</span>
           </div>
         </div>
-        <div className="testimonials">
+        <div className="testimonials flex">
           {data.map((custom) => (
             <div key={custom.id} className="testimonial_card">
               <div>
