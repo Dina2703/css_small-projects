@@ -54,10 +54,16 @@
   margin: 10px 0 30px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-
   gap: 10px;
   width: 100%;
   padding: 0 5px;
+}
+
+#coming-soon .thank_you {
+  display: block;
+  color: var(--primary-blue);
+  font-weight: 700;
+  letter-spacing: 6px;
 }
 
 #coming-soon .notify_wrapper input {

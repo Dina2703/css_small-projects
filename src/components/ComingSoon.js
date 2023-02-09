@@ -9,6 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 function ComingSoon() {
   const [err, setErr] = useState(false);
   const [input, setInput] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // console.log(input);
   function handleChange(e) {
@@ -20,6 +21,7 @@ function ComingSoon() {
     if (input.match(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g)) {
       setErr(false);
       console.log("Success");
+      setIsSubmitted(true);
       setInput("");
     } else {
       setInput("");
@@ -37,25 +39,36 @@ function ComingSoon() {
           We are launching <span>soon!</span>
         </div>
         <p>Subscribe and get notified</p>
-        <form className="notify_wrapper" onSubmit={handleSubmit}>
-          <div>
-            <input
-              className={err ? "err" : ""}
-              type="text"
-              placeholder={err ? "example@email.com" : "Your email address..."}
-              value={input}
-              onChange={handleChange}
-            />
-            <p
-              className="err-message"
-              style={{ display: err ? "block" : "none" }}
-            >
-              Please Provide a valid email address
-            </p>
-          </div>
+        {!isSubmitted ? (
+          <form className="notify_wrapper" onSubmit={handleSubmit}>
+            <div>
+              <input
+                className={err ? "err" : ""}
+                type="text"
+                placeholder={
+                  err ? "example@email.com" : "Your email address..."
+                }
+                value={input}
+                onChange={handleChange}
+              />
+              <p
+                className="err-message"
+                style={{ display: err ? "block" : "none" }}
+              >
+                Please Provide a valid email address
+              </p>
+            </div>
 
-          <button type="submit">Notify Me</button>
-        </form>
+            <button type="submit">Notify Me</button>
+          </form>
+        ) : (
+          <div
+            className="thank_you 
+        "
+          >
+            Thank you for subscribing!
+          </div>
+        )}
         <div className="img_wrapper">
           <img src={heroImg} alt="" />
         </div>
