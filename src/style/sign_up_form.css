@@ -14,12 +14,15 @@
   height: calc(100vh - 68.5px);
   background-color: var(--primary-red);
   position: relative;
+  z-index: 1;
+  padding: 20px;
 }
 
 .flex {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
 }
 
 #sign_up_form::after {
@@ -29,12 +32,14 @@
   background: url(../assets/sign-up/images/bg-intro-desktop.png) no-repeat;
   background-size: cover;
   position: absolute;
+  z-index: 10;
 }
 
 #sign_up_form .container {
   width: 1000px;
   aspect-ratio: 100 / 60;
-  border: 1px solid black;
+  position: relative;
+  z-index: 100;
 }
 
 #sign_up_form .hero_leftside {
@@ -59,5 +64,70 @@
 
 #sign_up_form .form_container {
   flex: 1;
+  height: 100%;
   padding: 8px;
+}
+
+#sign_up_form .button {
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sign_up_form .form_container .try {
+  box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  background-color: var(--blue);
+}
+
+#sign_up_form .form_container .try span {
+  font-weight: 600;
+}
+
+#sign_up_form form {
+  height: 500px;
+  background-color: white;
+  margin-top: 24px;
+  flex-direction: column;
+  border-radius: 6px;
+  border: none;
+  padding: 34px;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+
+#sign_up_form form input {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--grayish-blue);
+  padding: 15px 0 15px 30px;
+  border-radius: 6px;
+  color: white;
+  text-align: left;
+  outline: none;
+}
+
+#sign_up_form form .claim_trail {
+  background-color: var(--primary-green);
+  font-size: 15px;
+  box-shadow: 1px 2px rgba(0, 128, 0, 0.652);
+}
+
+#sign_up_form form input:hover {
+  border-color: var(--blue);
+}
+
+#sign_up_form form .terms {
+  color: var(--grayish-blue);
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+#sign_up_form form .terms span {
+  color: var(--primary-red);
+  font-weight: 600;
+  cursor: pointer;
 }
