@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/stats_preview.css";
-import heroImg from "../assets/stats-preview/images/image-header-desktop.jpg";
 
 function StatsPreviewCard() {
   return (

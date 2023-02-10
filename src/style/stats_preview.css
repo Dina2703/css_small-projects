@@ -17,15 +17,12 @@
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   display: flex;
+  padding: 0 120px;
 }
 
 #stats_preview .flex {
   display: flex;
   align-items: center;
-}
-
-#stats_preview .flex > * {
-  flex: 50%;
 }
 
 #stats_preview .container {
@@ -85,7 +82,8 @@
 
 #stats_preview .stats {
   width: 90%;
-  padding-top: 30px;
+  padding-top: 1.3rem;
+  justify-content: space-between;
 }
 
 #stats_preview .stat span {
@@ -105,4 +103,70 @@
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 1.1px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #stats_preview {
+    padding: 0 60px;
+  }
+  #stats_preview .context_container {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #stats_preview {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #stats_preview .container {
+    width: 360px;
+    height: auto;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #stats_preview .hero_img_wrapper {
+    width: 100%;
+    height: 270px;
+    background: url(../assets/stats-preview/images/image-header-mobile.jpg)
+      no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #stats_preview .hero_img_wrapper::after {
+    background-color: hsla(277, 64%, 48%, 0.44);
+    border-radius: 10px 10px 0 0;
+  }
+
+  #stats_preview .context_container {
+    align-items: center;
+    text-align: center;
+  }
+
+  #stats_preview .context_container h2 {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 40px;
+  }
+
+  #stats_preview .stats {
+    flex-direction: column;
+  }
+
+  #stats_preview .stat {
+    margin: 25px;
+  }
+
+  #stats_preview .stat span:first-child {
+    font-size: 35px;
+    margin-bottom: 12px;
+  }
+
+  #stats_preview .stat span:last-child {
+    font-size: 15px;
+    letter-spacing: 1.8px;
+  }
 }
