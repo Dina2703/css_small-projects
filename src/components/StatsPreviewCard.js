@@ -7,7 +7,8 @@ function StatsPreviewCard() {
     <div id="stats_preview">
       <div className="container flex">
         <div className="hero_img_wrapper"></div>
-        <div className="context_container">
+
+        <div className="context_container flex">
           <h2>
             Get <span>insights</span> that help your business grow.
           </h2>
