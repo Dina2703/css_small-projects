@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --primary-main-bg-blue: hsl(233, 47%, 7%);
+  --primary-card-bg-blue: hsl(244, 38%, 16%);
+  --primary-violet: hsl(277, 64%, 61%);
+  --parag-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --stat-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+#stats_preview {
+  width: 100vw;
+  height: calc(100vh - 68.5px);
+  background-color: var(--primary-main-bg-blue);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  display: flex;
+}
+
+#stats_preview .flex {
+  display: flex;
+  align-items: center;
+}
+
+#stats_preview .container {
+  width: 1100;
+  aspect-ratio: 100 / 50;
+  color: var(--parag-transparent-white);
+  flex-direction: row-reverse;
+  margin: auto;
+  background: var(--primary-card-bg-blue);
+  border-radius: 10px;
+}
+
+#stats_preview .container > * {
+  flex: 1;
+  height: 100%;
+}
+
+#stats_preview .hero_img_wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/stats-preview/images/image-header-desktop.jpg)
+    no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+}
+
+#stats_preview .hero_img_wrapper::after {
+  content: "";
+  background-color: hsla(277, 64%, 48%, 0.44);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0 10px 10px 0;
+}
