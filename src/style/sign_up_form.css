@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+#sign_up_form {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: calc(100vh - 68.5px);
+  background-color: var(--primary-red);
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sign_up_form::after {
+  content: "";
+  width: 100vw;
+  height: calc(100vh - 68.5px);
+  background: url(../assets/sign-up/images/bg-intro-desktop.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+#sign_up_form .container {
+  width: 1000px;
+  aspect-ratio: 100 / 60;
+  border: 1px solid black;
+}
+
+#sign_up_form .hero_leftside {
+  flex: 1;
+  height: 300px;
+  text-align: left;
+  margin: auto 0;
+}
+
+#sign_up_form .hero_leftside h2 {
+  color: white;
+  font-size: xx-large;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#sign_up_form .hero_leftside p {
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+#sign_up_form .form_container {
+  flex: 1;
+  padding: 8px;
+}
