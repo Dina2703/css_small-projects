@@ -107,6 +107,7 @@
 #sign_up_form form input {
   width: 100%;
   text-align: left;
+  font-size: 15px;
   padding: 15px 0 15px 30px;
   outline: none;
   border: 1px solid var(--grayish-blue);
@@ -115,6 +116,7 @@
 
 #sign_up_form form input.err {
   border-color: var(--primary-red);
+  color: var(--primary-red);
 }
 
 .err_icon {

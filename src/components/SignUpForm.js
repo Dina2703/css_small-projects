@@ -9,26 +9,40 @@ function SignUpForm() {
     email: "",
     password: "",
   });
-  const [err, setError] = useState({
-    isEmpty: false,
+  const [error, setError] = useState({
+    isFirstNameEmpty: false,
+    isLastNameEmpty: false,
+    isPasswordEmpty: false,
     isEmail: false,
   });
 
-  const { isEmpty, isEmail } = err;
+  const { isFirstNameEmpty, isLastNameEmpty, isPasswordEmpty, isEmail } = error;
 
   const { firstName, lastName, email, password } = form;
 
+  const isValidEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
   function handleSubmit(e) {
     e.preventDefault();
-    if (firstName.length <= 0 || lastName.length <= 0 || password.length <= 0) {
+    if (firstName.length <= 0) {
       setError((prev) => ({
         ...prev,
-        isEmpty: true,
+        isFirstNameEmpty: true,
       }));
-    } else if (
-      email.length <= 0 ||
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)
-    ) {
+    }
+    if (lastName.length <= 0) {
+      setError((prev) => ({
+        ...prev,
+        isLastNameEmpty: true,
+      }));
+    }
+    if (password.length <= 0) {
+      setError((prev) => ({
+        ...prev,
+        isPasswordEmpty: true,
+      }));
+    }
+    if (email.length <= 0 || !isValidEmail.test(email)) {
       setError((prev) => ({
         ...prev,
         isEmail: true,
@@ -36,6 +50,7 @@ function SignUpForm() {
       console.log("email is not correct");
     } else {
       console.log(form);
+      console.log("Form submitted");
       setForm({
         firstName: "",
         lastName: "",
@@ -47,10 +62,12 @@ function SignUpForm() {
 
   function handleChange(e) {
     let { name, value } = e.target;
-    if (isEmail || isEmpty) {
+    if (isEmail || isFirstNameEmpty || isLastNameEmpty || isPasswordEmpty) {
       setError({
+        isFirstNameEmpty: false,
+        isLastNameEmpty: false,
+        isPasswordEmpty: false,
         isEmail: false,
-        isEmpty: false,
       });
     }
     setForm((prev) => ({
@@ -74,19 +91,19 @@ function SignUpForm() {
           <div className="try button">
             <span> Try it free 7 days </span>then $20/mo.thereafter
           </div>
-          <form className="flex" onSubmit={handleSubmit} autocomplete="off">
+          <form className="flex" onSubmit={handleSubmit}>
             <div className="input_control">
               <input
                 onMouseDown={handleChange}
-                className={isEmpty ? "err" : ""}
+                className={isFirstNameEmpty ? "err" : ""}
                 type="text"
-                placeholder={isEmpty ? "" : "First Name"}
+                placeholder={isFirstNameEmpty ? "" : "First Name"}
                 value={firstName}
                 onChange={handleChange}
                 name="firstName"
               />{" "}
-              {isEmpty ? <MdOutlineError className="err_icon" /> : ""}
-              {isEmpty ? (
+              {isFirstNameEmpty ? <MdOutlineError className="err_icon" /> : ""}
+              {isFirstNameEmpty ? (
                 <p className="err_message">First Name cannot be empty</p>
               ) : (
                 ""
@@ -96,15 +113,15 @@ function SignUpForm() {
             <div className="input_control">
               <input
                 onMouseDown={handleChange}
-                className={isEmpty ? "err" : ""}
+                className={isLastNameEmpty ? "err" : ""}
                 type="text"
-                placeholder={isEmpty ? "" : "Last Name"}
+                placeholder={isLastNameEmpty ? "" : "Last Name"}
                 value={lastName}
                 onChange={handleChange}
                 name="lastName"
               />{" "}
-              {isEmpty ? <MdOutlineError className="err_icon" /> : ""}
-              {isEmpty ? (
+              {isLastNameEmpty ? <MdOutlineError className="err_icon" /> : ""}
+              {isLastNameEmpty ? (
                 <p className="err_message">Last Name cannot be empty</p>
               ) : (
                 ""
@@ -116,7 +133,7 @@ function SignUpForm() {
                 onMouseDown={handleChange}
                 className={isEmail ? "err" : ""}
                 type="text"
-                placeholder={isEmail ? "" : "Email Address"}
+                placeholder={isEmail ? email : "Email Address"}
                 value={email}
                 onChange={handleChange}
                 name="email"
@@ -132,15 +149,16 @@ function SignUpForm() {
             <div className="input_control">
               <input
                 onMouseDown={handleChange}
-                className={isEmpty ? "err" : ""}
+                className={isPasswordEmpty ? "err" : ""}
                 type="password"
-                placeholder={isEmpty ? "" : "Password"}
+                placeholder={isPasswordEmpty ? "" : "Password"}
                 value={password}
                 onChange={handleChange}
                 name="password"
+                autoComplete="on"
               />{" "}
-              {isEmpty ? <MdOutlineError className="err_icon" /> : ""}
-              {isEmpty ? (
+              {isPasswordEmpty ? <MdOutlineError className="err_icon" /> : ""}
+              {isPasswordEmpty ? (
                 <p className="err_message">Password cannot be empty</p>
               ) : (
                 ""
