@@ -11,6 +11,25 @@ import "../style/main.css";
 
 const images = [
   {
+    img: signupFormImg,
+    id: 9,
+    path: "sign-up-form",
+    project: "Intro component with sign-up form",
+  },
+  {
+    img: socialImg,
+    id: 7,
+    path: "social-section",
+    project: "Social proof section",
+  },
+  {
+    img: statsPreviewImg,
+    id: 8,
+    path: "stats-preview-card",
+    project: "Stats preview card component",
+  },
+
+  {
     img: accordionImg,
     id: 1,
     path: "accordion-card",
@@ -40,31 +59,16 @@ const images = [
     path: "preview-card",
     project: "3-column preview card component",
   },
-  {
-    img: socialImg,
-    id: 7,
-    path: "social-section",
-    project: "Social proof section",
-  },
-  {
-    img: statsPreviewImg,
-    id: 8,
-    path: "stats-preview-card",
-    project: "Stats preview card component",
-  },
-  {
-    img: signupFormImg,
-    id: 9,
-    path: "sign-up-form",
-    project: "Intro component with sign-up form",
-  },
 ];
 
 function Main() {
   return (
     <section id="main">
       <div className="container">
-        <h2 className="title">Small projects to practice HTML, CSS, JS</h2>
+        <h2 className="title">
+          {" "}
+          Collection of responsive layouts. Practice HTML, CSS, JS
+        </h2>
         <div className="projects-wrapper">
           <ul>
             {images.map((each) => (
